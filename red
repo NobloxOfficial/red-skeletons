@@ -29,10 +29,7 @@ local function createSkeletonEspAndTracerForCharacter(character, localCharacter)
         lines[i].Color = Color3.fromRGB(255, 0, 0) -- Red
     end
 
-    -- Create a line using the Drawing API for the tracer
-    local tracer = Drawing.new("Line")
-    tracer.Thickness = 2
-    tracer.Color = Color3.fromRGB(255, 0, 0) -- Red
+    
 
     -- Update frame color and line position every frame
     local function updateEsp()
