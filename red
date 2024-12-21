@@ -21,14 +21,7 @@ local function createSkeletonEspAndTracerForCharacter(character, localCharacter)
     local leftLowerLeg = character:FindFirstChild("LeftLowerLeg") or character:FindFirstChild("LeftShin")
     local rightLowerLeg = character:FindFirstChild("RightLowerLeg") or character:FindFirstChild("RightShin")
 
-    -- Create lines for the skeleton ESP
-    local lines = {}
-    for i = 1, 10 do
-        lines[i] = Drawing.new("Line")
-        lines[i].Thickness = 2
-        lines[i].Color = Color3.fromRGB(255, 0, 0) -- Red
-    end
-
+    
     
 
     -- Update frame color and line position every frame
